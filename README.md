@@ -4,13 +4,16 @@ Ansible code to configure and maintain my lab.
 
 ### Usage 
 
+```bash
 Run baseline against all hosts 
-`anisble-playbook playbooks/site.yml`
+anisble-playbook playbooks/site.yml
 
 Run against one host
-`ansible-playbook playbooks/site.yml --limit linux-target`
+ansible-playbook playbooks/site.yml --limit linux-target
 
-`ansible-playbook playbooks/site.yml --check`
+
+ansible-playbook playbooks/site.yml --check`
+```
 
 ### Structure
 
