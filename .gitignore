@@ -1,0 +1,17 @@
+# Ansible
+*.retry
+.vault_pass
+.vault_pass.txt
+*.pyc
+__pycache__/
+
+# Editor / OS
+.vscode/
+.idea/
+.DS_Store
+*.swp
+*.swo
+
+# Local-only files
+.env
+secrets/
