@@ -11,7 +11,7 @@ anisble-playbook playbooks/site.yml
 # Run against one host
 ansible-playbook playbooks/site.yml --limit linux-target
 
-ansible-playbook playbooks/site.yml --check`
+ansible-playbook playbooks/site.yml --check
 ```
 
 ### Structure
