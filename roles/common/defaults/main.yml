@@ -1,0 +1,25 @@
+---
+common_timezone: America/New_York
+
+common_packages: 
+  - curl
+  - wget
+  - vim
+  - tmux
+  - htop
+  - net-tools
+  - dnsutils
+  - tcpdump
+  - qemu-guest-agent
+  - unattended-upgrades
+  - apt-listchanges
+
+# Unattended upgrade settings
+common_unattended_origins: 
+  - "${distro_id}:${distro_codename}"
+  - "${distro_id}:${distro_codename}-security"
+  - "${distro_id}ESMApps:${distro_codename}-apps-security"
+  - "${distro_id}ESM:${distro_codename}-infra-security"
+
+common_unattended_automatic_reboot: "false"
+common_unattended_reboot_time: "03:00"

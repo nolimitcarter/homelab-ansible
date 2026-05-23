@@ -1,0 +1,17 @@
+// Managed by Ansible
+Unattended-Upgrade::Allowed-Origins {
+{% for origin in common_unattended_origins %}
+    "{{ origin }}";
+{% endfor %}
+};
+
+Unattended-Upgrade::Package-Blacklist {
+};
+
+Unattended-Upgrade::DevRelease "auto";
+Unattended-Upgrade::Remove-Unused-Kernel-Packages "true";
+Unattended-Upgrade::Remove-New-Unused-Dependencies "true";
+Unattended-Upgrade::Remove-Unused-Dependencies "true";
+Unattended-Upgrade::Automatic-Reboot "{{ common_unattended_automatic_reboot }}";
+Unattended-Upgrade::Automatic-Reboot-Time "{{ common_unattended_reboot_time }}";
+Unattended-Upgrade::SyslogEnable "true";
